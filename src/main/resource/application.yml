@@ -14,9 +14,6 @@ spring:
     #url: jdbc:mysql://wz9e56j73waav0n3k7o.mysql.rds.aliyuncs.com:3306/db2023?useUnicode=true&characterEncoding=utf-8&useSSL=false
     #username: user2023
     #password: user2023
-    #url: jdbc:mysql://wz9e56j73waav0n3k7o.mysql.rds.aliyuncs.com:3306/db2023?useUnicode=true&characterEncoding=utf-8&useSSL=false
-    #username: user2023
-    #password: user2023
 
   #main:
   #  allow-bean-definition-overriding: true
