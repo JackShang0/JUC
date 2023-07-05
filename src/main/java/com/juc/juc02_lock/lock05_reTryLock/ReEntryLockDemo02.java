@@ -13,6 +13,10 @@ public class ReEntryLockDemo02 {
 
     static Lock lock = new ReentrantLock();
 
+    /**
+     * 使用 ReentrantLock 的时候，加锁几次就要释放锁几次
+     * @param args
+     */
     public static void main(String[] args) {
         new Thread(()->{
             lock.lock();
