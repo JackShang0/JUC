@@ -1,5 +1,7 @@
 package com.test10099;
 
+import org.junit.Test;
+
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.function.Consumer;
@@ -76,6 +78,24 @@ public class test01 {
         System.out.println(sdfIntegral.format(new Date()));*/
 
 
+
+    }
+
+    @Test
+    public void way(){
+
+        Integer num ;
+        Integer x ;
+        Integer y ;
+
+        num = 70000;
+        if (num>65535){
+            x = num / 65535;
+            y = num - 65535;
+            System.out.println("x = " + x);
+            System.out.println("y = " + y);
+            System.out.println(x+"."+y);
+        }
 
     }
 
