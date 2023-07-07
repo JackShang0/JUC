@@ -10,7 +10,7 @@ import java.util.concurrent.locks.ReentrantLock;
  * @date: 2023/7/6
  * @version: 1.0
  */
-public class lockSupportDemo {
+public class lockSupportDemoOldApi {
     public static void main(String[] args) {
         /**
          * wait 和 notify 方法的使用及注意事项：
