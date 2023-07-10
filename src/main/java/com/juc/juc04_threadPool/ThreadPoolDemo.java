@@ -1,6 +1,7 @@
 package com.juc.juc04_threadPool;
 
 
+import com.google.common.util.concurrent.ThreadFactoryBuilder;
 import com.juc.juc03_threadInterrupt.ThreadPoolTest;
 
 import java.util.concurrent.*;
@@ -12,6 +13,19 @@ import java.util.concurrent.*;
  * @version: 1.0
  */
 public class ThreadPoolDemo {
+
+    //线程池参数  线程工厂创建
+    private static final ThreadFactory namedThreadFactory = new ThreadFactoryBuilder()
+            .setNameFormat("product-pool-%d").build();
+
+
+    //线程池参数  注意：队列创建和选择
+    private static final ExecutorService fixedThreadPool = new ThreadPoolExecutor(Runtime.getRuntime().availableProcessors() * 2,
+            Runtime.getRuntime().availableProcessors() * 40,
+            0L,
+            TimeUnit.MILLISECONDS,
+            new LinkedBlockingQueue<>(Runtime.getRuntime().availableProcessors() * 20),
+            namedThreadFactory);
 
 
     /**
