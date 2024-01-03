@@ -40,3 +40,5 @@ spring:
 #mybatis:
 #  type-aliases-package: com.sitech.prtg.bean       # 所有实体类所在包路径
 #  mapper-locations: classpath:mapper/**/*.xml      # mapper映射文件
+SNDSwitch:
+  open: true
